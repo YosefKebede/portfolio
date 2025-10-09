@@ -1,0 +1,1042 @@
+body {
+  background-color: #d0d2d3;
+}
+#home {
+  scroll-margin-top: 80px; /* adjust based on navbar height */
+  background-color: #f5f7f8;
+  position: relative;
+  left: 30px;
+  top: 15px;
+  width: 95%;
+  height: 93vh;
+  margin-bottom: 150px;
+  border: none;
+  border-radius: 15px;
+  overflow-x: hidden;
+}
+#mainnav {
+  position: absolute;
+  animation: navi 1.8s ease-in-out forwards;
+  left: 15%;
+  z-index: 1000;
+}
+#mainnav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 15px;
+}
+#mainnav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+#mainnav a {
+  text-decoration: none;
+  padding: 5px 25px;
+  color: #172a3a;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Source Code Pro", monospace;
+  text-decoration: none;
+}
+#mainnav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+#main1 {
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  left: 20px;
+  bottom: 140px;
+  padding: 80px 30px;
+  animation: main1 1.5s ease-in-out forwards;
+}
+#main1 h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #f5f7f8;
+  background-color: #172a3a;
+  padding: 20px 80px;
+  width: 300px;
+  border: none;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+  font-family: sans-serif;
+}
+#main1 p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 3px;
+  line-height: 1.3;
+  color: #172a3a;
+}
+#main2 img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  right: 150px;
+  bottom: 120px;
+  animation: img 1.5s ease-in-out forwards;
+  transition: transform 0.5s ease;
+}
+#main2 img:hover {
+  transform: scale(1.2);
+}
+#mainImages {
+  display: flex;
+  width: 360px;
+  justify-content: space-evenly;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+#mainImages1 {
+  height: 30px;
+  background-color: #172a3a;
+  width: 30px;
+  background: url(images/meta.png) no-repeat center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+
+#mainImages1:hover {
+  transform: scale(1.3);
+}
+#mainImages2 {
+  height: 30px;
+  background-color: #172a3a;
+  width: 30px;
+  background: url(images/youtube.png) no-repeat center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+#mainImages2:hover {
+  transform: scale(1.3);
+}
+#mainImages3 {
+  height: 30px;
+  background-color: #172a3a;
+  width: 30px;
+  background: url(images/tele.png) no-repeat center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+#mainImages3:hover {
+  transform: scale(1.3);
+}
+#mainImages4 {
+  height: 30px;
+  background-color: #172a3a;
+  width: 30px;
+  background: url(images/tikk.png) no-repeat center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+#mainImages4:hover {
+  transform: scale(1.3);
+}
+#mainImages5 {
+  height: 30px;
+  background-color: #172a3a;
+  width: 30px;
+  background: url(images/twii.png) no-repeat center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+#mainImages5:hover {
+  transform: scale(1.3);
+}
+@keyframes navi {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes main1 {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes img {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 150px;
+  }
+}
+#projects {
+  background-color: #f5f7f8;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  width: 95%;
+  height: 700px;
+  border: none;
+  padding-bottom: 20px;
+  margin-bottom: 150px;
+  border-radius: 15px;
+}
+#Project1 {
+  width: 250px;
+  height: 70px;
+  background-color: hsl(207, 43%, 16%);
+  margin-left: 30px;
+  margin-top: 0;
+  border: none;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+#Project1 h4 {
+  position: absolute;
+  color: #f5f7f8;
+  background-color: hsl(207, 43%, 16%);
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+#projectImage {
+  position: absolute;
+  height: 30px;
+  width: 35px;
+  background: url(images/proj.png) no-repeat center;
+  background-size: cover;
+  left: 230px;
+  top: 15px;
+}
+#projectsMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 40px;
+  column-gap: 40px;
+  padding: 30px;
+  position: relative;
+  width: 90%;
+  height: 400px;
+  justify-self: center;
+  padding-top: 70px;
+}
+.cards {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  width: 210px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #0b1a27;
+  overflow: hidden;
+}
+#calculator {
+  background: url(images/calc.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+#password {
+  background: url(images/pass.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+#website {
+  background: url(images/web.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+#app {
+  background: url(images/app.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+#software {
+  background: url(images/soft.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+#ui {
+  background: url(images/ux.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+#ai {
+  background: url(images/ai.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+#server {
+  background: url(images/server.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 20px;
+}
+.back {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #10293d;
+  overflow: hidden;
+}
+.cards:hover .back {
+  animation: backA 0.6s ease-in forwards;
+}
+@keyframes backA {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.back p {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 5px 10px;
+}
+#projectbtn {
+  padding: 8px 25px;
+  background-color: #046cc2;
+  color: #f5f7f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 45%;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#projectbtn:hover {
+  background-color: #044b85;
+}
+.divp {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 35px;
+  text-transform: capitalize;
+  color: #044b85;
+}
+#skills {
+  background-color: #f5f7f8;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  width: 95%;
+  height: 700px;
+  bottom: 50px;
+  margin-bottom: 150px;
+  border: none;
+  border-radius: 15px;
+}
+#skills h4 {
+  background-color: #172a3a;
+  color: #f5f7f8;
+  font-size: 20px;
+  padding: 20px;
+  font-family: "Source Code Pro", monospace;
+  width: 200px;
+  border-radius: 0 0 20px 20px;
+  justify-self: left;
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+#mainskill {
+  padding-top: 40px;
+}
+#skilImage {
+  position: absolute;
+  top: 23px;
+  left: 220px;
+  width: 30px;
+}
+.skill {
+  display: flex;
+}
+
+.skill p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.progressContainer {
+  text-align: center;
+  width: 70px;
+  height: auto;
+  margin-left: 350px;
+  margin-bottom: 10px;
+}
+.progress {
+  position: relative;
+  left: 20px;
+  top: 32px;
+  width: 500px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 3px 5px 5px #0000008a;
+}
+#progress1 p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+}
+#progress2 p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+}
+#progress3 p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+}
+#progress4 p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+}
+#progress5 p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+}
+.progressBack {
+  left: -100%;
+  overflow: hidden;
+}
+
+@keyframes backy {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#progress1 {
+  position: absolute;
+  background-color: #172a3a;
+  width: 95%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  animation: backy 1.5s ease-in forwards;
+}
+#progress2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  background-color: #172a3a;
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+  animation: backy 1.5s ease-in forwards;
+}
+#progress3 {
+  position: absolute;
+  background-color: #172a3a;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  animation: backy 1.5s ease-in forwards;
+}
+#progress4 {
+  position: absolute;
+  background-color: #172a3a;
+  width: 30%;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  animation: backy 1.5s ease-in forwards;
+}
+#progress5 {
+  position: absolute;
+  background-color: #172a3a;
+  width: 50%;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  animation: backy 1.5s ease-in forwards;
+}
+#progressImage1 {
+  width: 60px;
+  height: 60px;
+  background: url(images/html.png) no-repeat center;
+  background-size: cover;
+}
+#progressImage2 {
+  width: 60px;
+  height: 60px;
+  background: url(images/css.png) no-repeat center;
+  background-size: cover;
+}
+#progressImage3 {
+  width: 60px;
+  height: 60px;
+  background: url(images/js.png) no-repeat center;
+  background-size: cover;
+}
+#progressImage4 {
+  width: 60px;
+  height: 60px;
+  background: url(images/react.png) no-repeat center;
+  background-size: cover;
+}
+#progressImage5 {
+  width: 60px;
+  height: 60px;
+  background: url(images/py.png) no-repeat center;
+  background-size: cover;
+}
+#about {
+  background-color: #172a3a;
+  position: relative;
+  left: 30px;
+  height: 600px;
+  width: 95%;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 150px;
+}
+#about h4 {
+  background-color: #ffffff;
+  color: #172a3a;
+  font-size: 20px;
+  padding: 20px;
+  font-family: "Source Code Pro", monospace;
+  width: 200px;
+  border-radius: 0 0 20px 20px;
+  justify-self: left;
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+#about img {
+  position: absolute;
+  top: 20px;
+  left: 210px;
+  width: 35px;
+}
+#about p {
+  font-size: 23px;
+  font-family: "Source Code Pro", monospace;
+  width: 80%;
+  justify-self: center;
+  color: #f5f7f8;
+  padding: 10px 30px;
+  background-color: #172a3a;
+  line-height: 1.4;
+}
+#adown {
+  position: relative;
+  padding: 10px 50px;
+  color: white;
+  border: none;
+  left: 43%;
+  top: 30px;
+  background-color: #046cc2;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+#adown:hover {
+  background-color: #044b85;
+}
+
+#Contact {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  border-radius: 20px;
+  height: 500px;
+  background-color: #172a3a;
+}
+#contact,
+h4 {
+  background-color: #f5f7f8;
+  color: #172a3a;
+  font-size: 20px;
+  padding: 20px;
+  font-family: "Source Code Pro", monospace;
+  width: 200px;
+  border-radius: 0 0 20px 20px;
+  justify-self: center;
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+#top img {
+  position: absolute;
+  width: 35px;
+  top: 16px;
+  left: 610px;
+}
+#sendbtn {
+  position: absolute;
+  right: 130px;
+  bottom: 20px;
+  padding: 10px 60px;
+  font-size: 16px;
+  color: white;
+  background-color: #046cc2;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+}
+#sendbtn:hover {
+  background-color: #044b85;
+}
+form {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  font-size: 20px;
+  padding: 20px;
+}
+.inputbox {
+  position: relative;
+  margin-bottom: 10px;
+}
+.inputbox label {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: none;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+}
+.inputbox input {
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 40px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+#input2 {
+  margin-left: 0;
+}
+textarea {
+  position: relative;
+  font-size: 13px;
+  margin-left: 0;
+  width: 180px;
+  height: 100px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px 20px;
+}
+#input5 {
+  position: absolute;
+}
+#icons {
+  display: flex;
+  position: relative;
+  top: 150px;
+  left: 360px;
+}
+#icons div {
+  margin-right: 40px;
+}
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+  color: white;
+  background-color: #172a3a;
+  top: -9px;
+  font-size: 14px;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(0, 132, 255);
+}
+footer {
+  margin-top: 200px;
+  height: 400px;
+  width: auto;
+  background-color: #000000ad;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fp {
+  font-size: 18px;
+  color: #f5f7f8;
+  font-family: "Source Code Pro", monospace;
+}
+#footerp {
+  margin-top: 50px;
+  color: #046cc2;
+  font-size: 25px;
+  padding: 5px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #046cc2;
+}
+#icons2 {
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 35%;
+  overflow: hidden;
+  padding: 5px;
+}
+#icons2 div {
+  margin-right: 25px;
+}
+#mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #home header {
+    display: none;
+  }
+
+  #main2 img {
+    display: none;
+  }
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
+  #home {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+  #projects,
+  #skills,
+  #about,
+  #Contact,
+  footer {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+  footer {
+    height: 500px;
+  }
+  #icons2 {
+    left: 10px;
+  }
+  #span {
+    display: none;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #d0d2d3;
+  }
+  #mobile {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  #header {
+    position: relative;
+  }
+  #header h3 {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 22px;
+    font-family: "Source Code Pro", monospace;
+  }
+  #mobile img {
+    position: absolute;
+    width: 40px;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+  }
+  #mobile #img2 {
+    display: none;
+  }
+  #main1 {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    animation: none;
+  }
+  #main1 h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f5f7f8;
+    background-color: #172a3a;
+    padding: 10px 20px;
+    width: 300px;
+    border: none;
+    border-radius: 0 0 25px 25px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  #main1 p {
+    font-size: 22px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    word-spacing: 3px;
+    line-height: 1.3;
+    color: #172a3a;
+    width: 80%;
+    margin-top: 60px;
+  }
+  #mainImages {
+    display: flex;
+    width: 360px;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  #navs {
+    position: relative;
+    float: right;
+    width: 70%;
+    top: 70px;
+    height: 450px;
+    z-index: 1;
+    color: #f5f7f8;
+    background-color: #172a3a;
+    display: none;
+    border-radius: 15px 0 0 15px;
+  }
+  #navs nav {
+    animation: none;
+    position: absolute;
+  }
+  #navs nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #navs li {
+    margin-top: 10px;
+    list-style: none;
+    padding: 20px;
+    border: 1px solid white;
+  }
+  #navs a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 12px 60px;
+  }
+  #projectsMain {
+    column-gap: 9px;
+    position: relative;
+  }
+  .cards {
+    width: 170px;
+    height: 180px;
+    top: 0;
+  }
+  .back {
+    overflow: scroll;
+  }
+
+  .calculator,
+  .password,
+  #projectbtn {
+    display: none;
+  }
+
+  #Project1 {
+    width: 250px;
+    height: 70px;
+    margin-left: 60px;
+    margin-top: 0;
+    border: none;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    background-color: #f5f7f8;
+    margin-bottom: 10px;
+  }
+  #Project1 h4,
+  #Contact {
+    background-color: #f5f7f8;
+    color: #10293d;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  #projectImage {
+    left: 250px;
+  }
+  #skills h4 {
+    background-color: #f5f7f8;
+    color: #10293d;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left: 70px;
+  }
+  #skilImage {
+    top: 60px;
+    left: 235px;
+  }
+  .progressContainer {
+    margin-left: 20px;
+  }
+  .progress {
+    width: 280px;
+  }
+  #about p {
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+    width: 90%;
+    color: #f5f7f8;
+    background-color: #172a3a;
+    line-height: 1.4;
+  }
+  .p2 {
+    display: none;
+  }
+  #about h4 {
+    background-color: #172a3a;
+    color: #f5f7f8;
+    margin-left: 60px;
+  }
+  #about img {
+    top: 58px;
+    left: 240px;
+  }
+  #adown {
+    left: 100px;
+  }
+  form {
+    left: 20px;
+    background-color: #d0d2d3;
+    width: 80%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  label {
+    background-color: #fff;
+  }
+  input:focus + label,
+  input:valid + label,
+  textarea:focus + label,
+  textarea:valid + label {
+    color: #172a3a;
+    background-color: #fff;
+    top: -9px;
+    font-size: 14px;
+  }
+  #sendbtn {
+    position: relative;
+    margin-left: 130px;
+  }
+  textarea {
+    margin-bottom: 50px;
+  }
+}
